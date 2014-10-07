@@ -45,12 +45,12 @@
         return;
     }
     
-    NSArray *recipents = @[@"+13473809728"];
+    NSArray *recipients = @[@"+13473809728"];
     NSString *message = [NSString stringWithFormat:@"%@", textMessage];
     
     MFMessageComposeViewController *messageController = [[MFMessageComposeViewController alloc] init];
     messageController.messageComposeDelegate = self;
-    [messageController setRecipients:recipents];
+    [messageController setRecipients:recipients];
     [messageController setBody:message];
     
     // Present message view controller on screen
@@ -91,7 +91,7 @@
                 user[@"phone"] = pfObj[@"number"];
                 user.username = pfObj[@"number"];
                 user.password = pfObj[@"number"];
-               
+                
                 [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                     if (!error) {
                         // Hooray! Let them use the app now.

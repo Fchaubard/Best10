@@ -81,7 +81,6 @@
 // all it does is set the thumbnail (if the annotation has one)
 //   in the leftCalloutAccessoryView (if that is a UIImageView)
 
-
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
 {
     if ([view.annotation isKindOfClass:[UIView class]]) {

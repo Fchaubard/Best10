@@ -225,6 +225,7 @@
 		AB7E0A5D194A93D400B76286 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AB7E0A5F194A9BE800B76286 /* Best10.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Best10.entitlements; sourceTree = "<group>"; };
 		AB7E0A61194A9C7D00B76286 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		ABAC8A8219E3BE0000A83723 /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
 		ABB77B6318724F0D008B20A7 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
 		ABB77B6418724F0D008B20A7 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		ABB77BAB18767F06008B20A7 /* FXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLabel.h; sourceTree = "<group>"; };
@@ -379,6 +380,7 @@
 			children = (
 				AB7E0A5F194A9BE800B76286 /* Best10.entitlements */,
 				AB3723F2186CC368005D923B /* Main.storyboard */,
+				ABAC8A8219E3BE0000A83723 /* AppConstants.h */,
 				AB3723BA186CB138005D923B /* AppDelegate.h */,
 				AB3723BB186CB138005D923B /* AppDelegate.m */,
 				AB7E0A4B194A8FAE00B76286 /* Sign Up */,

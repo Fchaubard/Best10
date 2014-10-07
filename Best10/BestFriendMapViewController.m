@@ -72,7 +72,7 @@
 
 
 #pragma mark - MSMapViewController
-
+/***
 - (void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext
 {
     _managedObjectContext = managedObjectContext;
@@ -98,7 +98,7 @@
     [self updateRegion:@1]; // always update region
     //  if (self.needUpdateRegion) [self updateRegion];
 }
-
+***/
 
 - (void)performFetch
 {
