@@ -37,7 +37,6 @@
 		AB1655CE1870B13100D8E4DF /* CHDraggingCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1655CA1870B13100D8E4DF /* CHDraggingCoordinator.m */; };
 		AB1655E01870B4EB00D8E4DF /* SKBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1655DD1870B4EB00D8E4DF /* SKBounceAnimation.m */; };
 		AB1655E11870B4EB00D8E4DF /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1655DF1870B4EB00D8E4DF /* CAAnimation+Blocks.m */; };
-		AB3723AA186CB138005D923B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3723A9186CB138005D923B /* Foundation.framework */; };
 		AB3723AC186CB138005D923B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3723AB186CB138005D923B /* CoreGraphics.framework */; };
 		AB3723AE186CB138005D923B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3723AD186CB138005D923B /* UIKit.framework */; };
 		AB3723B0186CB138005D923B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3723AF186CB138005D923B /* CoreData.framework */; };
@@ -75,6 +74,16 @@
 		AB372442186D455B005D923B /* DHSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB372440186D455B005D923B /* DHSidebarViewController.m */; };
 		AB372445186D4AC9005D923B /* SideBarMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB372444186D4AC9005D923B /* SideBarMenuTableViewController.m */; };
 		AB372448186D4F19005D923B /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = AB372447186D4F19005D923B /* OrderedDictionary.m */; };
+		AB7E0A4E194A903100B76286 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7E0A4D194A903100B76286 /* SignUpViewController.m */; };
+		AB7E0A50194A931300B76286 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7E0A4F194A931300B76286 /* Parse.framework */; };
+		AB7E0A52194A935500B76286 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7E0A51194A935500B76286 /* StoreKit.framework */; };
+		AB7E0A56194A939C00B76286 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7E0A55194A939C00B76286 /* libz.dylib */; };
+		AB7E0A58194A93B200B76286 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7E0A57194A93B200B76286 /* CFNetwork.framework */; };
+		AB7E0A5A194A93BF00B76286 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7E0A59194A93BF00B76286 /* MobileCoreServices.framework */; };
+		AB7E0A5C194A93C900B76286 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7E0A5B194A93C900B76286 /* Security.framework */; };
+		AB7E0A5E194A93D400B76286 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7E0A5D194A93D400B76286 /* SystemConfiguration.framework */; };
+		AB7E0A60194A9C7400B76286 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3723A9186CB138005D923B /* Foundation.framework */; };
+		AB7E0A62194A9C7D00B76286 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7E0A61194A9C7D00B76286 /* CoreFoundation.framework */; };
 		ABB77B6518724F0D008B20A7 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB77B6418724F0D008B20A7 /* Friend.m */; };
 		ABB77BAD18767F06008B20A7 /* FXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB77BAC18767F06008B20A7 /* FXLabel.m */; };
 /* End PBXBuildFile section */
@@ -204,6 +213,18 @@
 		AB372444186D4AC9005D923B /* SideBarMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarMenuTableViewController.m; sourceTree = "<group>"; };
 		AB372446186D4F19005D923B /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
 		AB372447186D4F19005D923B /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
+		AB7E0A4C194A903100B76286 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		AB7E0A4D194A903100B76286 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		AB7E0A4F194A931300B76286 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		AB7E0A51194A935500B76286 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AB7E0A53194A937F00B76286 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		AB7E0A55194A939C00B76286 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AB7E0A57194A93B200B76286 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AB7E0A59194A93BF00B76286 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AB7E0A5B194A93C900B76286 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AB7E0A5D194A93D400B76286 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AB7E0A5F194A9BE800B76286 /* Best10.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Best10.entitlements; sourceTree = "<group>"; };
+		AB7E0A61194A9C7D00B76286 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		ABB77B6318724F0D008B20A7 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
 		ABB77B6418724F0D008B20A7 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		ABB77BAB18767F06008B20A7 /* FXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLabel.h; sourceTree = "<group>"; };
@@ -215,17 +236,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB11BE4118712A15006917CF /* AudioToolbox.framework in Frameworks */,
-				AB1655A9186E707500D8E4DF /* QuartzCore.framework in Frameworks */,
-				AB3723E7186CB77C005D923B /* CoreLocation.framework in Frameworks */,
 				AB3723E5186CB76D005D923B /* MessageUI.framework in Frameworks */,
+				AB7E0A62194A9C7D00B76286 /* CoreFoundation.framework in Frameworks */,
+				AB7E0A60194A9C7400B76286 /* Foundation.framework in Frameworks */,
+				AB7E0A5E194A93D400B76286 /* SystemConfiguration.framework in Frameworks */,
+				AB7E0A5C194A93C900B76286 /* Security.framework in Frameworks */,
+				AB7E0A5A194A93BF00B76286 /* MobileCoreServices.framework in Frameworks */,
+				AB7E0A58194A93B200B76286 /* CFNetwork.framework in Frameworks */,
+				AB11BE4118712A15006917CF /* AudioToolbox.framework in Frameworks */,
+				AB7E0A56194A939C00B76286 /* libz.dylib in Frameworks */,
+				AB1655A9186E707500D8E4DF /* QuartzCore.framework in Frameworks */,
+				AB3723AC186CB138005D923B /* CoreGraphics.framework in Frameworks */,
+				AB7E0A52194A935500B76286 /* StoreKit.framework in Frameworks */,
+				AB3723E7186CB77C005D923B /* CoreLocation.framework in Frameworks */,
 				AB3723E2186CB75D005D923B /* AddressBook.framework in Frameworks */,
 				AB3723E3186CB75D005D923B /* AddressBookUI.framework in Frameworks */,
-				AB3723AC186CB138005D923B /* CoreGraphics.framework in Frameworks */,
 				AB3723B0186CB138005D923B /* CoreData.framework in Frameworks */,
 				AB3723DF186CB207005D923B /* MapKit.framework in Frameworks */,
 				AB3723AE186CB138005D923B /* UIKit.framework in Frameworks */,
-				AB3723AA186CB138005D923B /* Foundation.framework in Frameworks */,
+				AB7E0A50194A931300B76286 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +349,15 @@
 		AB3723A8186CB138005D923B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB7E0A61194A9C7D00B76286 /* CoreFoundation.framework */,
+				AB7E0A5D194A93D400B76286 /* SystemConfiguration.framework */,
+				AB7E0A5B194A93C900B76286 /* Security.framework */,
+				AB7E0A59194A93BF00B76286 /* MobileCoreServices.framework */,
+				AB7E0A57194A93B200B76286 /* CFNetwork.framework */,
+				AB7E0A55194A939C00B76286 /* libz.dylib */,
+				AB7E0A53194A937F00B76286 /* libz.1.1.3.dylib */,
+				AB7E0A51194A935500B76286 /* StoreKit.framework */,
+				AB7E0A4F194A931300B76286 /* Parse.framework */,
 				AB11BE4018712A15006917CF /* AudioToolbox.framework */,
 				AB1655A8186E707500D8E4DF /* QuartzCore.framework */,
 				AB3723E6186CB77C005D923B /* CoreLocation.framework */,
@@ -339,9 +377,11 @@
 		AB3723B1186CB138005D923B /* Best10 */ = {
 			isa = PBXGroup;
 			children = (
+				AB7E0A5F194A9BE800B76286 /* Best10.entitlements */,
 				AB3723F2186CC368005D923B /* Main.storyboard */,
 				AB3723BA186CB138005D923B /* AppDelegate.h */,
 				AB3723BB186CB138005D923B /* AppDelegate.m */,
+				AB7E0A4B194A8FAE00B76286 /* Sign Up */,
 				AB37240A186CD356005D923B /* MainDrawer */,
 				AB3723F4186CC55A005D923B /* Best Friend Map */,
 				AB372430186D0059005D923B /* Friend Requests */,
@@ -359,6 +399,9 @@
 		AB3723B2186CB138005D923B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB1655A7186E3A4C00D8E4DF /* popover */,
+				ABB77BAB18767F06008B20A7 /* FXLabel.h */,
+				ABB77BAC18767F06008B20A7 /* FXLabel.m */,
 				AB372411186CDA54005D923B /* Assets.xcassets */,
 				AB165597186E398B00D8E4DF /* UIView+Glow.h */,
 				AB165598186E398B00D8E4DF /* UIView+Glow.m */,
@@ -415,13 +458,10 @@
 			isa = PBXGroup;
 			children = (
 				ABB2EADC194A57FB008DA7FE /* MapChatViewController */,
-				AB1655A7186E3A4C00D8E4DF /* popover */,
 				AB3723F8186CC59B005D923B /* MapViewController.h */,
 				AB3723F9186CC59B005D923B /* MapViewController.m */,
 				AB3723FA186CC59B005D923B /* BestFriendMapViewController.h */,
 				AB3723FB186CC59B005D923B /* BestFriendMapViewController.m */,
-				ABB77BAB18767F06008B20A7 /* FXLabel.h */,
-				ABB77BAC18767F06008B20A7 /* FXLabel.m */,
 				AB3723F5186CC561005D923B /* images */,
 			);
 			name = "Best Friend Map";
@@ -517,6 +557,15 @@
 			name = "Send Feedback";
 			sourceTree = "<group>";
 		};
+		AB7E0A4B194A8FAE00B76286 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				AB7E0A4C194A903100B76286 /* SignUpViewController.h */,
+				AB7E0A4D194A903100B76286 /* SignUpViewController.m */,
+			);
+			name = "Sign Up";
+			sourceTree = "<group>";
+		};
 		ABB2EADC194A57FB008DA7FE /* MapChatViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -587,7 +636,7 @@
 		AB37239E186CB138005D923B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Chaubard;
 				TargetAttributes = {
 					AB3723A5186CB138005D923B = {
@@ -597,7 +646,7 @@
 								enabled = 1;
 							};
 							com.apple.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -699,6 +748,7 @@
 				AB37242E186CFE51005D923B /* MSMenuCell.m in Sources */,
 				AB1655CC1870B13100D8E4DF /* CHDraggableView.m in Sources */,
 				AB3723FE186CC59B005D923B /* MapViewController.m in Sources */,
+				AB7E0A4E194A903100B76286 /* SignUpViewController.m in Sources */,
 				AB165599186E398B00D8E4DF /* UIView+Glow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -745,7 +795,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -784,7 +833,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -819,11 +867,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Best10/Best10-Prefix.pch";
 				INFOPLIST_FILE = "Best10/Best10-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -834,11 +888,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Best10/Best10-Prefix.pch";
 				INFOPLIST_FILE = "Best10/Best10-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -846,7 +906,6 @@
 		AB3723DC186CB138005D923B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Best10.app/Best10";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -869,7 +928,6 @@
 		AB3723DD186CB138005D923B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Best10.app/Best10";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

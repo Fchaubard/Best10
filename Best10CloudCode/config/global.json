@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Best10": {
+            "applicationId": "EuISCJmV7sb8VUR9gLELw9Fch9wbkhbUVdQwyHaX", 
+            "masterKey": "KYH208EIMGyEr97dX0vr2t4CjOd0vBBjGCc0nT17"
+        }, 
+        "_default": {
+            "link": "Best10"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.18"
+    }
+}

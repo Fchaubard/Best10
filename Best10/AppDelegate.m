@@ -24,8 +24,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    
     /////////////////////////////////
     /// TAKE THIS OUT WHEN READY ////
     ////////////////////////////////
@@ -34,6 +32,18 @@
     }
     
     
+    // Parse setup
+    [Parse setApplicationId:@"EuISCJmV7sb8VUR9gLELw9Fch9wbkhbUVdQwyHaX"
+                  clientKey:@"AgVzA9fiXDv4JrHm0Kc9NkyQ9deZ85zpoOnvPCjC"];
+    
+    
+    
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+     UIRemoteNotificationTypeAlert|
+     UIRemoteNotificationTypeSound];
+    // Parse Analytics
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
     
     // if its being awoken in the background.. we dont need to do all this..
     if (UIApplicationStateBackground != application.applicationState) {
@@ -41,14 +51,7 @@
     
         [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
 
-        
-        
-        
         self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        
-        
-        
-        
         
         if(![[NSUserDefaults standardUserDefaults] objectForKey:@"current view controller"])
         {
@@ -68,13 +71,24 @@
         [self refreshUserData];
     
     }
-
     return YES;
-
-
 
 }
 
+// More parse setup
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+}
 
 
 - (void) application:(UIApplication *)application
@@ -454,13 +468,14 @@ performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionH
     
     NSArray *gerunds = [[NSUserDefaults standardUserDefaults] objectForKey:@"gerunds"];
     
-    if (!gerunds ) {
+    if (!gerunds ) { // default values
         gerunds = @[ @"Eating",
                      @"Exercising",
                      @"Studying",
                      @"Raging",
                      @"Shopping",
-                     @"Coffeeing"];
+                     @"Coffeeing",
+                     @"Ghosting"];
         
         [[NSUserDefaults standardUserDefaults] setObject:gerunds forKey:@"gerunds"];
     }

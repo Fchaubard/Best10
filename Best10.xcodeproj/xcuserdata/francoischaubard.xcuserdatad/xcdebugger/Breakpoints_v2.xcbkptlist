@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Best10/AppDelegate.m"
-            timestampString = "410387236.703982"
+            timestampString = "424324615.265496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "-updateUserStatus:"
             landmarkType = "5">
          </BreakpointContent>
