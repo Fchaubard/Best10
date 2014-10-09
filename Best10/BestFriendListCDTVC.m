@@ -174,7 +174,7 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+    /*
     Friend *friend = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
@@ -205,6 +205,7 @@
 
         
     }
+     */
 }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

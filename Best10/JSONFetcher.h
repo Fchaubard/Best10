@@ -14,5 +14,6 @@
 + (NSArray *)pullChatData;
 + (NSString*) escapeUnicodeString:(NSString*)string;
 + (NSString*) unescapeUnicodeString:(NSString*)string;
++ (void)updateUserStatus:(NSUInteger)gerundNumber;
 
 @end

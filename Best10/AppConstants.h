@@ -34,6 +34,10 @@
 
 #define		PF_CHATROOMS_CLASS_NAME				@"ChatRooms"
 #define		PF_CHATROOMS_ROOM					@"room"
+#define		PF_USER_FULLNAME					@"PF_USER_FULLNAME"
+#define		PF_USER_FULLNAME_LOWER              @"PF_USER_FULLNAME_LOWER"
+
+
 
 //---------------------------------------------------------------------------------------------
 

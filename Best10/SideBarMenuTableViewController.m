@@ -18,18 +18,17 @@
 
 #import "MSMenuTableViewHeader.h"
 #import "MSMenuCell.h"
-#import "OrderedDictionary.h"
+#import "AppConstants.h"
+#import "utilities.h"
+#import "SVProgressHUD.h"
 
 NSString * const MSMenuCellReuseIdentifier = @"Drawer Cell";
 NSString * const MSDrawerHeaderReuseIdentifier = @"Drawer Header";
 
-@interface SideBarMenuTableViewController ()
-
-@property (nonatomic,retain) OrderedDictionary *titlesClassesDictionary;
-
-@end
 
 @implementation SideBarMenuTableViewController
+
+@synthesize viewHeader, imageUser;
 
 
 - (void)initialize
@@ -59,6 +58,11 @@ NSString * const MSDrawerHeaderReuseIdentifier = @"Drawer Header";
      @"Settings":[SettingsViewController class],
      @"Send Feedback":[SendFeedbackViewController class]
      }*/
+    self.tableView.tableHeaderView = viewHeader;
+    self.tableView.separatorInset = UIEdgeInsetsZero;
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    imageUser.layer.cornerRadius = imageUser.frame.size.width / 2;
+    imageUser.layer.masksToBounds = YES;
     
     self.titlesClassesDictionary = [[OrderedDictionary alloc] init];
     
@@ -107,6 +111,111 @@ NSString * const MSDrawerHeaderReuseIdentifier = @"Drawer Header";
     return;
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    //if ([PFUser currentUser] == nil) LoginUser(self);
+    
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    [self profileLoad];
+}
+- (void)profileLoad
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+{
+    PFUser *user = [PFUser currentUser];
+    
+    imageUser.file = [user objectForKey:PF_USER_PICTURE];
+    [imageUser loadInBackground];
+    
+}
+
+#pragma mark - action sheet
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+{
+    if (buttonIndex != actionSheet.cancelButtonIndex)
+    {
+        
+        //PostNotification(NOTIFICATION_USER_LOGGED_OUT);
+        
+        imageUser.image = [UIImage imageNamed:@"blank_profile"];
+        //fieldName.text = @"";
+        
+        //LoginUser(self);
+    }
+}
+
+- (IBAction)actionPhoto:(id)sender
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+{
+    ShouldStartPhotoLibrary(self, YES);
+}
+- (IBAction)actionSave:(id)sender
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+{
+    //[self dismissKeyboard];
+    
+    //if ([fieldName.text isEqualToString:@""] == NO)
+    //{
+        [SVProgressHUD show];
+        
+        PFUser *user = [PFUser currentUser];
+        user[PF_USER_FULLNAME] = user.username;
+        user[PF_USER_FULLNAME_LOWER] = [user.username lowercaseString];
+        
+        [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error)
+         {
+             if (error == nil)
+             {
+                 [SVProgressHUD showSuccessWithStatus:@"Saved."];
+             }
+             else [SVProgressHUD showErrorWithStatus:@"Network error."];
+         }];
+    //}
+    //else [ProgressHUD showError:@"Name field must be set."];
+}
+#pragma mark - UIImagePickerControllerDelegate
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+{
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    if (image.size.width > 140) image = ResizeImage(image, 140, 140);
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    PFFile *filePicture = [PFFile fileWithName:@"picture.jpg" data:UIImageJPEGRepresentation(image, 0.6)];
+    [filePicture saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error)
+     {
+         if (error != nil) [SVProgressHUD showErrorWithStatus:@"Network error."];
+     }];
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    imageUser.image = image;
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    if (image.size.width > 34) image = ResizeImage(image, 34, 34);
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    PFFile *fileThumbnail = [PFFile fileWithName:@"thumbnail.jpg" data:UIImageJPEGRepresentation(image, 0.6)];
+    [fileThumbnail saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error)
+     {
+         if (error != nil) [SVProgressHUD showErrorWithStatus:@"Network error."];
+     }];
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    PFUser *user = [PFUser currentUser];
+    user[PF_USER_PICTURE] = filePicture;
+    user[PF_USER_THUMBNAIL] = fileThumbnail;
+    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error)
+     {
+         if (error != nil) [SVProgressHUD showErrorWithStatus:@"Network error."];
+     }];
+    //---------------------------------------------------------------------------------------------------------------------------------------------
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 #pragma mark - MSAppDelegate
 UIImageView *windowBackground;
 
@@ -143,14 +252,20 @@ UIImageView *windowBackground;
 {
     
     // Return the number of rows in the section.
+    
     return [self.titlesClassesDictionary count];
+    
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UITableViewHeaderFooterView *headerView = [self.tableView dequeueReusableHeaderFooterViewWithIdentifier:MSDrawerHeaderReuseIdentifier];
-    headerView.textLabel.text = @"";
-    return headerView;
+    if (section==1){
+        UITableViewHeaderFooterView *headerView = [self.tableView dequeueReusableHeaderFooterViewWithIdentifier:MSDrawerHeaderReuseIdentifier];
+        headerView.textLabel.text = @"BlahBlah";
+        return nil;
+    }else{
+        return nil;
+    }
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
@@ -160,7 +275,7 @@ UIImageView *windowBackground;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 35.0;
+    return 0.2;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -170,12 +285,14 @@ UIImageView *windowBackground;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MSMenuCellReuseIdentifier];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MSMenuCellReuseIdentifier];
     }
 
     cell.textLabel.text = [self.titlesClassesDictionary  keyAtIndex:indexPath.row];
+
     return cell;
 }
 

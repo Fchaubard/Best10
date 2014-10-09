@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 
-@interface SignUpViewController : UIViewController <MFMessageComposeViewControllerDelegate>
+@interface SignUpViewController : UIViewController <MFMessageComposeViewControllerDelegate, UIAlertViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
-@property (weak, nonatomic) IBOutlet UILabel *welcomeMessageLabel;
+@property (strong, nonatomic) IBOutlet UIButton *signUpButton;
+@property (strong, nonatomic) IBOutlet UILabel *welcomeMessageLabel;
 @property  (strong) NSString *verifCode;
 
 @end

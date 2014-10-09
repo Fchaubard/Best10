@@ -8,10 +8,6 @@
 
 #import "MyCLLocationManager.h"
 
-@interface MyCLLocationManager()
-
-
-@end
 @implementation MyCLLocationManager
 
 

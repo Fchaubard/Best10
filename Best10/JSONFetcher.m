@@ -66,6 +66,59 @@ typedef enum {
     }
 }
 
++ (void)updateUserStatus:(NSUInteger)gerundNumber{
+    
+    
+    dispatch_queue_t fetchQ = dispatch_queue_create("Update Status", NULL);
+    dispatch_async(fetchQ, ^{
+        
+        CLLocation *loc = [(AppDelegate *)[UIApplication sharedApplication].delegate getUserCurrentLocation];
+        
+        NSString *sessionid =[(AppDelegate *)[UIApplication sharedApplication].delegate getUserToken];
+        
+        NSString *status =
+        [JSONFetcher escapeUnicodeString:[NSString stringWithFormat:@"%@",
+                                          [[(AppDelegate *)[UIApplication sharedApplication].delegate getGerunds] objectAtIndex:gerundNumber]] ];
+        
+        //NSString *strippedStatus = [status stringByReplacingOccurrencesOfString:@" " withString:@"!!_____!_____!!"];
+        NSString *str = [NSString stringWithFormat:@"http://busbookie.com/serverlets/updatemystatusjson.php?session=%@&adjective=%d&lat=%f&long=%f&status=%@&statusUpdate=%@",sessionid,0,loc.coordinate.latitude,loc.coordinate.longitude,status,@"idk"];
+        //str = [str stringByReplacingOccurrencesOfString:@" " withString:@"!!_____!_____!!"];
+        str = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSLog(@"URL: %@",str);
+        NSURL *URL = [NSURL URLWithString:str];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+        //NSError *error = [[NSError alloc] init];
+        NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+        
+        NSString * string = [[NSString alloc] initWithData:responseData encoding:
+                             NSASCIIStringEncoding];
+        
+        
+        
+        if (string.intValue == 1) {
+            NSLog(@"asdfa");
+        } else {
+            NSLog(@"asdfaasd");
+        }
+        
+        /*dispatch_async(dispatch_get_main_queue(), ^ {
+         
+         [SVProgressHUD dismiss];
+         int64_t delayInSeconds = 0.6;
+         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+         
+         [self.mapViewController refreshWithoutHUD];
+         [self.mapViewController updateRegion:@2]; // slinky thing
+         });
+         
+         });
+         */
+        
+        
+    });
+    return;
+}
 
 + (NSArray *)pullChatData{
     return nil;

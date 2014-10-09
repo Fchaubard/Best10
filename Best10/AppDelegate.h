@@ -11,6 +11,7 @@
 #import "DHSidebarViewController.h"
 #import "MyCLLocationManager.h"
 
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
@@ -41,6 +42,6 @@
 - (MyCLLocationManager *)getLocationManager;
 - (CLLocation *)getUserCurrentLocation;
 - (void)updateUserStatus:(NSUInteger)gerundNumber;
-
+- (void)setUpDrawer:(UIApplication *)application;
 
 @end

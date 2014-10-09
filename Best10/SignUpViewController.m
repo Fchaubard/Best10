@@ -7,7 +7,7 @@
 //
 
 #import "SignUpViewController.h"
-
+#import "AppDelegate.h"
 @interface SignUpViewController ()
 
 @end
@@ -57,6 +57,17 @@
     [self presentViewController:messageController animated:YES completion:nil];
 }
 
+- (void)alertView:(UIAlertView *)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex{
+    /*if (buttonIndex == [UIAlertView ]){
+        //cancel clicked ...do your action
+    }else{
+        //reset clicked
+    }*/
+    
+    
+
+}
 
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult) result
 {
@@ -100,7 +111,12 @@
                         // TODO: Show the errorString somewhere and let the user try again.
                         UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Saved Number as:" message:successString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                         [warningAlert show];
-
+                        [[NSUserDefaults standardUserDefaults] setObject:pfObj[@"number"] forKey:@"phoneNumber"];
+                        
+                        // TODO: Then get your contacts like Jesus did and let you friend people..
+                        
+                        // FOR NOW: we will just send to main
+                        [(AppDelegate *)[UIApplication sharedApplication].delegate setUpDrawer:[UIApplication sharedApplication]];
                         
                         
                     } else {
@@ -118,13 +134,9 @@
                 UIAlertView *warningAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [warningAlert show];
             }
-          
-            // TODO: Then get your contacts like Jesus did and let you friend people..
-            
             
             [pfObj delete];
-            
-            
+
             break;
         }
         default:
@@ -140,7 +152,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
 }
 
 - (NSString *)shuffledAlphabet {

@@ -12,7 +12,7 @@
 #import "PopoverTVC.h"
 #import "DHSidebarViewController.h"
 #import "AppDelegate.h"
-
+#import "JSONFetcher.h"
 
 @interface BestFriendMapViewController ()
 
@@ -276,7 +276,7 @@
     */
     [self.adjectiveButton setTitle:[[(AppDelegate *)[UIApplication sharedApplication].delegate getGerunds] objectAtIndex:rowNum] forState:UIControlStateNormal];
     [self.popover dismissPopoverAnimated:YES];
-    [(AppDelegate *)[UIApplication sharedApplication].delegate updateUserStatus:rowNum];
+    [JSONFetcher updateUserStatus:rowNum];
     
 }
 

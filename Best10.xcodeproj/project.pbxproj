@@ -74,6 +74,9 @@
 		AB372442186D455B005D923B /* DHSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB372440186D455B005D923B /* DHSidebarViewController.m */; };
 		AB372445186D4AC9005D923B /* SideBarMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB372444186D4AC9005D923B /* SideBarMenuTableViewController.m */; };
 		AB372448186D4F19005D923B /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = AB372447186D4F19005D923B /* OrderedDictionary.m */; };
+		AB727D5319E4A07100FD48C8 /* ParseFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AB727D5219E4A07100FD48C8 /* ParseFetcher.m */; };
+		AB727D5519E5B9DB00FD48C8 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB727D5419E5B9DB00FD48C8 /* Signup.storyboard */; };
+		AB727D5919E5D62400FD48C8 /* utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AB727D5819E5D62400FD48C8 /* utilities.m */; };
 		AB7E0A4E194A903100B76286 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7E0A4D194A903100B76286 /* SignUpViewController.m */; };
 		AB7E0A50194A931300B76286 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7E0A4F194A931300B76286 /* Parse.framework */; };
 		AB7E0A52194A935500B76286 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7E0A51194A935500B76286 /* StoreKit.framework */; };
@@ -139,8 +142,8 @@
 		AB1655B5186E81CD00D8E4DF /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
 		AB1655B6186E81CD00D8E4DF /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
 		AB1655B7186E81CD00D8E4DF /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
-		AB1655BA186F6DA700D8E4DF /* JSONFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONFetcher.h; sourceTree = "<group>"; };
-		AB1655BB186F6DA700D8E4DF /* JSONFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONFetcher.m; sourceTree = "<group>"; };
+		AB1655BA186F6DA700D8E4DF /* JSONFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONFetcher.h; path = Best10/JSONFetcher.h; sourceTree = "<group>"; };
+		AB1655BB186F6DA700D8E4DF /* JSONFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONFetcher.m; path = Best10/JSONFetcher.m; sourceTree = "<group>"; };
 		AB1655BD186F9CDC00D8E4DF /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		AB1655BE186F9CDC00D8E4DF /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		AB1655C31870B13100D8E4DF /* CHAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHAvatarView.h; sourceTree = "<group>"; };
@@ -213,6 +216,11 @@
 		AB372444186D4AC9005D923B /* SideBarMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarMenuTableViewController.m; sourceTree = "<group>"; };
 		AB372446186D4F19005D923B /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
 		AB372447186D4F19005D923B /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
+		AB727D5119E4A07100FD48C8 /* ParseFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseFetcher.h; path = Best10/ParseFetcher.h; sourceTree = "<group>"; };
+		AB727D5219E4A07100FD48C8 /* ParseFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseFetcher.m; path = Best10/ParseFetcher.m; sourceTree = "<group>"; };
+		AB727D5419E5B9DB00FD48C8 /* Signup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		AB727D5719E5D62400FD48C8 /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
+		AB727D5819E5D62400FD48C8 /* utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utilities.m; sourceTree = "<group>"; };
 		AB7E0A4C194A903100B76286 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		AB7E0A4D194A903100B76286 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		AB7E0A4F194A931300B76286 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -226,6 +234,7 @@
 		AB7E0A5F194A9BE800B76286 /* Best10.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Best10.entitlements; sourceTree = "<group>"; };
 		AB7E0A61194A9C7D00B76286 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		ABAC8A8219E3BE0000A83723 /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		ABAC8A8319E4929200A83723 /* Best10-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Best10-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABB77B6318724F0D008B20A7 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
 		ABB77B6418724F0D008B20A7 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		ABB77BAB18767F06008B20A7 /* FXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLabel.h; sourceTree = "<group>"; };
@@ -315,7 +324,7 @@
 			name = JSMessageUI;
 			sourceTree = "<group>";
 		};
-		AB1655A7186E3A4C00D8E4DF /* popover */ = {
+		AB1655A7186E3A4C00D8E4DF /* Popover */ = {
 			isa = PBXGroup;
 			children = (
 				AB1655B4186E81CD00D8E4DF /* WYPopoverController.h */,
@@ -325,7 +334,7 @@
 				AB16559A186E3A4300D8E4DF /* PopoverTVC.h */,
 				AB16559B186E3A4300D8E4DF /* PopoverTVC.m */,
 			);
-			name = popover;
+			name = Popover;
 			sourceTree = "<group>";
 		};
 		AB37239D186CB138005D923B = {
@@ -378,7 +387,8 @@
 		AB3723B1186CB138005D923B /* Best10 */ = {
 			isa = PBXGroup;
 			children = (
-				AB7E0A5F194A9BE800B76286 /* Best10.entitlements */,
+				AB372411186CDA54005D923B /* Assets.xcassets */,
+				AB727D5419E5B9DB00FD48C8 /* Signup.storyboard */,
 				AB3723F2186CC368005D923B /* Main.storyboard */,
 				ABAC8A8219E3BE0000A83723 /* AppConstants.h */,
 				AB3723BA186CB138005D923B /* AppDelegate.h */,
@@ -401,39 +411,17 @@
 		AB3723B2186CB138005D923B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AB1655A7186E3A4C00D8E4DF /* popover */,
-				ABB77BAB18767F06008B20A7 /* FXLabel.h */,
-				ABB77BAC18767F06008B20A7 /* FXLabel.m */,
-				AB372411186CDA54005D923B /* Assets.xcassets */,
-				AB165597186E398B00D8E4DF /* UIView+Glow.h */,
-				AB165598186E398B00D8E4DF /* UIView+Glow.m */,
-				AB372446186D4F19005D923B /* OrderedDictionary.h */,
+				AB727D5619E5D5FD00FD48C8 /* Utilities */,
 				AB11BE4518712A82006917CF /* Sounds */,
-				AB372447186D4F19005D923B /* OrderedDictionary.m */,
-				AB37242A186CFE51005D923B /* MSMenuCell.h */,
-				AB37242B186CFE51005D923B /* MSMenuCell.m */,
-				AB37242C186CFE51005D923B /* MSMenuTableViewHeader.h */,
-				AB37242D186CFE51005D923B /* MSMenuTableViewHeader.m */,
-				AB372424186CE655005D923B /* SVProgressHUD.h */,
-				ABB77B671875EE35008B20A7 /* SBJSON */,
-				AB372425186CE655005D923B /* SVProgressHUD.m */,
-				AB372415186CDD4A005D923B /* CoreDataTableViewController.h */,
-				AB372416186CDD4A005D923B /* CoreDataTableViewController.m */,
-				AB372418186CDD8A005D923B /* MyCLLocationManager.h */,
-				AB372419186CDD8A005D923B /* MyCLLocationManager.m */,
-				AB11BE6F18724165006917CF /* APBase64Converter.h */,
-				AB11BE7018724165006917CF /* APBase64Converter.m */,
-				AB372421186CE4DC005D923B /* Friend+MKAnnotation.h */,
-				AB372422186CE4DC005D923B /* Friend+MKAnnotation.m */,
-				AB3723BD186CB138005D923B /* Best10.xcdatamodeld */,
-				ABB77B6318724F0D008B20A7 /* Friend.h */,
-				ABB77B6418724F0D008B20A7 /* Friend.m */,
-				AB1655BA186F6DA700D8E4DF /* JSONFetcher.h */,
-				AB1655BB186F6DA700D8E4DF /* JSONFetcher.m */,
+				AB727D5D19E6486000FD48C8 /* Fetchers */,
+				AB727D5E19E648A200FD48C8 /* Singletons */,
+				AB727D5C19E6483000FD48C8 /* Core Data */,
 				AB3723B3186CB138005D923B /* Best10-Info.plist */,
+				AB7E0A5F194A9BE800B76286 /* Best10.entitlements */,
 				AB3723B4186CB138005D923B /* InfoPlist.strings */,
 				AB3723B7186CB138005D923B /* main.m */,
 				AB3723B9186CB138005D923B /* Best10-Prefix.pch */,
+				ABAC8A8319E4929200A83723 /* Best10-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -459,6 +447,7 @@
 		AB3723F4186CC55A005D923B /* Best Friend Map */ = {
 			isa = PBXGroup;
 			children = (
+				AB1655A7186E3A4C00D8E4DF /* Popover */,
 				ABB2EADC194A57FB008DA7FE /* MapChatViewController */,
 				AB3723F8186CC59B005D923B /* MapViewController.h */,
 				AB3723F9186CC59B005D923B /* MapViewController.m */,
@@ -559,6 +548,64 @@
 			name = "Send Feedback";
 			sourceTree = "<group>";
 		};
+		AB727D5619E5D5FD00FD48C8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AB727D5719E5D62400FD48C8 /* utilities.h */,
+				AB727D5819E5D62400FD48C8 /* utilities.m */,
+				ABB77BAB18767F06008B20A7 /* FXLabel.h */,
+				ABB77BAC18767F06008B20A7 /* FXLabel.m */,
+				AB165597186E398B00D8E4DF /* UIView+Glow.h */,
+				AB165598186E398B00D8E4DF /* UIView+Glow.m */,
+				AB372446186D4F19005D923B /* OrderedDictionary.h */,
+				AB372447186D4F19005D923B /* OrderedDictionary.m */,
+				AB37242A186CFE51005D923B /* MSMenuCell.h */,
+				AB37242B186CFE51005D923B /* MSMenuCell.m */,
+				AB37242C186CFE51005D923B /* MSMenuTableViewHeader.h */,
+				AB37242D186CFE51005D923B /* MSMenuTableViewHeader.m */,
+				AB372424186CE655005D923B /* SVProgressHUD.h */,
+				AB372425186CE655005D923B /* SVProgressHUD.m */,
+				AB11BE6F18724165006917CF /* APBase64Converter.h */,
+				AB11BE7018724165006917CF /* APBase64Converter.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		AB727D5C19E6483000FD48C8 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				AB372421186CE4DC005D923B /* Friend+MKAnnotation.h */,
+				AB372422186CE4DC005D923B /* Friend+MKAnnotation.m */,
+				AB3723BD186CB138005D923B /* Best10.xcdatamodeld */,
+				ABB77B6318724F0D008B20A7 /* Friend.h */,
+				ABB77B6418724F0D008B20A7 /* Friend.m */,
+				AB372415186CDD4A005D923B /* CoreDataTableViewController.h */,
+				AB372416186CDD4A005D923B /* CoreDataTableViewController.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		AB727D5D19E6486000FD48C8 /* Fetchers */ = {
+			isa = PBXGroup;
+			children = (
+				AB727D5119E4A07100FD48C8 /* ParseFetcher.h */,
+				AB727D5219E4A07100FD48C8 /* ParseFetcher.m */,
+				AB1655BA186F6DA700D8E4DF /* JSONFetcher.h */,
+				AB1655BB186F6DA700D8E4DF /* JSONFetcher.m */,
+			);
+			name = Fetchers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AB727D5E19E648A200FD48C8 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				AB372419186CDD8A005D923B /* MyCLLocationManager.m */,
+				AB372418186CDD8A005D923B /* MyCLLocationManager.h */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
 		AB7E0A4B194A8FAE00B76286 /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,13 +632,6 @@
 				AB1655CA1870B13100D8E4DF /* CHDraggingCoordinator.m */,
 			);
 			name = MapChatViewController;
-			sourceTree = "<group>";
-		};
-		ABB77B671875EE35008B20A7 /* SBJSON */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = SBJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -684,6 +724,7 @@
 				AB3723B6186CB138005D923B /* InfoPlist.strings in Resources */,
 				AB11BE4818712A8F006917CF /* message-received.aiff in Resources */,
 				AB11BE4918712A8F006917CF /* message-sent.aiff in Resources */,
+				AB727D5519E5B9DB00FD48C8 /* Signup.storyboard in Resources */,
 				AB372412186CDA54005D923B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,10 +765,12 @@
 				AB372426186CE655005D923B /* SVProgressHUD.m in Sources */,
 				AB1655B9186E81CD00D8E4DF /* WYStoryboardPopoverSegue.m in Sources */,
 				AB372442186D455B005D923B /* DHSidebarViewController.m in Sources */,
+				AB727D5919E5D62400FD48C8 /* utilities.m in Sources */,
 				AB372417186CDD4A005D923B /* CoreDataTableViewController.m in Sources */,
 				AB11BE6E18712C26006917CF /* UIImage+JSMessagesView.m in Sources */,
 				AB11BE5D18712C0A006917CF /* JSMessageSoundEffect.m in Sources */,
 				AB1655CD1870B13100D8E4DF /* CHDraggableView+Avatar.m in Sources */,
+				AB727D5319E4A07100FD48C8 /* ParseFetcher.m in Sources */,
 				AB1655E01870B4EB00D8E4DF /* SKBounceAnimation.m in Sources */,
 				ABB77B6518724F0D008B20A7 /* Friend.m in Sources */,
 				AB11BE6418712C17006917CF /* JSAvatarImageFactory.m in Sources */,
@@ -868,6 +911,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -878,8 +922,11 @@
 				GCC_PREFIX_HEADER = "Best10/Best10-Prefix.pch";
 				INFOPLIST_FILE = "Best10/Best10-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Best10/Best10-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -889,6 +936,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -899,8 +947,10 @@
 				GCC_PREFIX_HEADER = "Best10/Best10-Prefix.pch";
 				INFOPLIST_FILE = "Best10/Best10-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Best10/Best10-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

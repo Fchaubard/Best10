@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dQB-HZ-ACs">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="Vbr-6c-ubQ">
+            <objects>
+                <viewController id="dQB-HZ-ACs" customClass="SignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tra-8u-WwR"/>
+                        <viewControllerLayoutGuide type="bottom" id="xqN-T8-ONL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zd7-ex-i3d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bman" translatesAutoresizingMaskIntoConstraints="NO" id="pqc-XI-2ny">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Best10!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZE-2R-O0S">
+                                <rect key="frame" x="83" y="42" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sX-2f-7gZ">
+                                <rect key="frame" x="85" y="389" width="150" height="49"/>
+                                <color key="backgroundColor" red="0.75361324439999999" green="1" blue="0.80421574340000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign Up Via Text"/>
+                                <connections>
+                                    <action selector="signUpByTextToTwilio:" destination="dQB-HZ-ACs" eventType="touchUpInside" id="D7y-bh-ozK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="signUpButton" destination="4sX-2f-7gZ" id="ZOa-rg-P4v"/>
+                        <outlet property="welcomeMessageLabel" destination="bZE-2R-O0S" id="UjJ-aF-lX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWq-bC-c1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="-666"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nzs-Jt-eUI">
+            <objects>
+                <viewController id="j2j-9V-BSz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1vl-xC-lhb"/>
+                        <viewControllerLayoutGuide type="bottom" id="TbS-Zw-ZOk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5bg-JO-8xw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMq-8o-C7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="-666"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bman" width="639" height="1135"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

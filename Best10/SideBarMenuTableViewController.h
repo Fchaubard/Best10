@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SideBarMenuTableViewController : UITableViewController
+#import "OrderedDictionary.h"
 
+@interface SideBarMenuTableViewController : UITableViewController  <UIActionSheetDelegate, UIImagePickerControllerDelegate>
 
+@property (strong, nonatomic) IBOutlet UIView *viewHeader;
+@property (strong, nonatomic) IBOutlet PFImageView *imageUser;
+@property (nonatomic,retain) OrderedDictionary *titlesClassesDictionary;
 
 @end

@@ -63,9 +63,6 @@
                 self.draggingCoordinator.placeholderCoordinate=CLLocationCoordinate2DMake(0.0, 0.0);
             }
         });
-        
-            
-   
 }
 
 -(void)refreshMapView{
